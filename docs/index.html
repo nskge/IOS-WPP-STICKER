@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data: https://media1.tenor.com https://d.fxtwitter.com https://d.fixupx.com https://gif.fxtwitter.com; connect-src https://d.fxtwitter.com https://d.fixupx.com https://gif.fxtwitter.com; media-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'; upgrade-insecure-requests"
+    />
+    <meta name="referrer" content="no-referrer" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="description" content="Paste an X/Twitter post link and copy the direct GIF link." />
+    <meta name="theme-color" content="#050505" />
+    <title>GIF Sticker WPP</title>
+    <link rel="icon" href="./icon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <section class="panel" aria-labelledby="app-title">
+        <header class="topbar">
+          <img class="mark" src="./icon.svg" alt="" width="32" height="32" />
+          <span>GIF Sticker WPP</span>
+        </header>
+
+        <div class="gif-frame">
+          <img
+            src="https://media1.tenor.com/m/78XYoj-iUxsAAAAd/hunter-x-hunter-killua.gif"
+            alt="Killua smiling behind a blue bandana"
+          />
+        </div>
+
+        <h1 id="app-title">X 2 GIF, SIMPLE.</h1>
+        <p class="sub">twitter link.</p>
+
+        <div class="input-head">
+          <label for="tweet-link">link</label>
+          <button id="paste-button" class="mini-button" type="button">paste</button>
+        </div>
+        <textarea
+          id="tweet-link"
+          placeholder="https://x.com/user/status/..."
+          rows="4"
+          maxlength="2048"
+          autocapitalize="off"
+          autocomplete="off"
+          autocorrect="off"
+          spellcheck="false"
+          inputmode="url"
+        ></textarea>
+
+        <div class="preview-box" aria-label="GIF output">
+          <span>gif output</span>
+          <div class="preview">
+            <img id="gif-preview" alt="" referrerpolicy="no-referrer" hidden />
+            <p id="preview-empty">paste a valid post link first</p>
+          </div>
+          <a
+            id="gif-link"
+            class="result"
+            aria-label="Generated GIF link"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-disabled="true"
+          >paste a valid post link first</a>
+        </div>
+        <p id="message" class="message" role="status" aria-live="polite" hidden></p>
+
+        <div class="actions">
+          <button id="copy-link-button" type="button" disabled>copy link</button>
+        </div>
+
+        <footer>
+        
+        </footer>
+      </section>
+    </main>
+
+    <script src="./app.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="GIF Sticker WPP">
+  <rect width="64" height="64" rx="14" fill="#050505"/>
+  <rect x="10" y="10" width="44" height="34" rx="8" fill="#F4F4F4"/>
+  <path d="M18 25h7v-4H14v18h11V28h-6v4h2v3h-3V25Zm16-4h-5v18h5V21Zm5 0v18h5v-7h7v-4h-7v-3h8v-4H39Z" fill="#050505"/>
+  <path d="M23 44h13l-11 9c-2 1.6-5-.1-4.5-2.7L22 44Z" fill="#F4F4F4"/>
+</svg>
